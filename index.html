@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the Song</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wham It!</h1>
+        
+        <div class = "guesses">
+            <p id="answer1">1</p>
+            <p id="answer2">2</p>
+            <p id="answer3">3</p>
+            <p id="answer4">4</p>
+            <p id="answer5">5</p>
+            <p id="answer6">6</p>
+        </div>
+
+        <div class="audio-player">
+            <button id="play-pause">  <img src='play.png' alt='Play' style='width: 35px; height: 15px;' />
+            </button>
+            <div class = "player">
+                <p id = "startTime">0:00</p>
+                <input type="range" id="seek-bar" min="0" max="100">
+                <p id = "endTime">0:01</p>
+            </div>
+        </div>
+        <div class="guess-section">
+            <button id = "skip"> Skip </button>
+            <!-- <input type="text" id="guess" placeholder="Enter your guess"> -->
+            <div class="autocomplete" style="width:300px;">
+                <input id="guess" type="text" name="myCountry" placeholder="Enter your guess">
+            </div>
+                <button id="submit" type="button">Submit</button>          
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
